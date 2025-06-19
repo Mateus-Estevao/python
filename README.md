@@ -1,42 +1,18 @@
 💰 Sistema Bancário em Python
-Este é um projeto simples de sistema bancário feito em Python, com funcionalidades básicas de depósito, saque e emissão de extrato. O menu interativo é exibido no terminal, permitindo ao usuário realizar operações de forma sequencial.
+Este é um projeto simples de sistema bancário em Python, feito com menus interativos no terminal. O sistema permite ao usuário realizar operações básicas como depósito, saque e consulta de extrato, com limites e validações.
 
 📋 Funcionalidades
- Depósito
+ Depósito com valor positivo
 
- Saque com limite por valor e quantidade
+ Saque com limite de valor e quantidade
 
- Visualização do extrato
+ Extrato com histórico de operações
 
- Encerrar o sistema
+ Interface via terminal
 
-📜 Menu de opções
-text
-Copiar
-Editar
-[d] Depositar  
-[s] Sacar  
-[e] Extrato  
-[q] Sair  
-🧠 Regras do sistema
-O limite por saque é de R$ 500,00.
+ Verificações de erros e mensagens ao usuário
 
-O número máximo de saques diários é 3.
-
-O extrato exibe todas as movimentações realizadas e o saldo atual.
-
-O sistema não permite depósitos ou saques com valores negativos ou zerados.
-
-🚀 Como usar
-Execute o script Python:
-
-bash
-Copiar
-Editar
-python banco.py
-Escolha uma das opções do menu para interagir com o sistema.
-
-🛠 Exemplo de uso
+🧾 Menu
 text
 Copiar
 Editar
@@ -45,20 +21,62 @@ Editar
 [e] Extrato
 [q] Sair
 
+=>
+⚙️ Regras do Sistema
+O limite máximo de saque por operação é de R$ 500,00.
+
+O usuário pode fazer até 3 saques por dia.
+
+Não é permitido sacar ou depositar valores negativos ou iguais a zero.
+
+O extrato mostra todas as movimentações realizadas.
+
+💡 Como usar
+Clone o repositório ou copie o código:
+
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/sistema-bancario.git
+Execute o script:
+
+bash
+Copiar
+Editar
+python banco.py
+Interaja com o menu, escolhendo as opções digitando:
+
+d para depositar
+
+s para sacar
+
+e para ver o extrato
+
+q para sair do sistema
+
+🧠 Exemplo de uso
+text
+Copiar
+Editar
 => d
 Informe o valor do deposito: 1000
-
 => s
-Informe o valor que deseja sacar: 300
-
+Informe o valor que deseja sacar: 200
 => e
 
 =================== EXTRATO ===================
 Deposito : R$ 1000.00
-Saque: R$ 300.00
+Saque: R$ 200.00
 
-Saldo: R$ 700.00
+Saldo: R$ 800.00
 =================================================
+📁 Arquivo
+banco.py: Arquivo principal com o código-fonte do sistema bancário.
+
+🛠 Requisitos
+Python 3.6 ou superior
+
+Terminal (CMD, Bash ou PowerShell)
+
 🧑‍💻 Autor
-Desenvolvido como exercício prático em Python para iniciantes.
-Ideal para treinar estruturas de controle, entrada de dados e operações com variáveis.
+Desenvolvido por Mateus Grillo.
