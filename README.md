@@ -89,6 +89,3 @@ Saldo: R$ 800.00
 
 ---
 
-## 🧑‍💻 Autor
-
-Desenvolvido por [Seu Nome Aqui].
